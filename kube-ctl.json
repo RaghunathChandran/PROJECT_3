@@ -1,0 +1,134 @@
+{
+  "aadProfile": null,
+  "addonProfiles": null,
+  "agentPoolProfiles": [
+    {
+      "availabilityZones": null,
+      "count": 3,
+      "enableAutoScaling": null,
+      "enableEncryptionAtHost": false,
+      "enableFips": false,
+      "enableNodePublicIp": false,
+      "enableUltraSsd": false,
+      "gpuInstanceProfile": null,
+      "kubeletConfig": null,
+      "kubeletDiskType": "OS",
+      "linuxOsConfig": null,
+      "maxCount": null,
+      "maxPods": 110,
+      "minCount": null,
+      "mode": "System",
+      "name": "nodepool1",
+      "nodeImageVersion": "AKSUbuntu-1804gen2containerd-2021.07.17",
+      "nodeLabels": {},
+      "nodePublicIpPrefixId": null,
+      "nodeTaints": null,
+      "orchestratorVersion": "1.20.7",
+      "osDiskSizeGb": 128,
+      "osDiskType": "Managed",
+      "osSku": "Ubuntu",
+      "osType": "Linux",
+      "podSubnetId": null,
+      "powerState": {
+        "code": "Running"
+      },
+      "provisioningState": "Succeeded",
+      "proximityPlacementGroupId": null,
+      "scaleSetEvictionPolicy": null,
+      "scaleSetPriority": null,
+      "spotMaxPrice": null,
+      "tags": null,
+      "type": "VirtualMachineScaleSets",
+      "upgradeSettings": null,
+      "vmSize": "Standard_DS2_v2",
+      "vnetSubnetId": null
+    }
+  ],
+  "apiServerAccessProfile": null,
+  "autoScalerProfile": null,
+  "autoUpgradeProfile": null,
+  "azurePortalFqdn": "gyanibotap-gyanibotaks-fee97d-a7826f29.portal.hcp.westus.azmk8s.io",
+  "disableLocalAccounts": null,
+  "diskEncryptionSetId": null,
+  "dnsPrefix": "gyanibotap-gyanibotaks-fee97d",
+  "enablePodSecurityPolicy": null,
+  "enableRbac": true,
+  "extendedLocation": null,
+  "fqdn": "gyanibotap-gyanibotaks-fee97d-a7826f29.hcp.westus.azmk8s.io",
+  "fqdnSubdomain": null,
+  "httpProxyConfig": null,
+  "id": "/subscriptions/fee97dff-e03e-498c-a273-efe00151f335/resourcegroups/gyanibotaks/providers/Microsoft.ContainerService/managedClusters/gyanibotapp",    
+  "identity": {
+    "principalId": "b2c005e2-bc35-46a4-866e-a2128a060e93",
+    "tenantId": "bea248c9-0c1f-464d-aebf-f46a41901497",
+    "type": "SystemAssigned",
+    "userAssignedIdentities": null
+  },
+  "identityProfile": {
+    "kubeletidentity": {
+      "clientId": "df73d4f1-9423-4719-921a-ffed59fd676c",
+      "objectId": "a2d993bf-b59c-40bb-8369-354ea8ca72e8",
+      "resourceId": "/subscriptions/fee97dff-e03e-498c-a273-efe00151f335/resourcegroups/MC_gyanibotaks_gyanibotapp_westus/providers/Microsoft.ManagedIdentity/userAssignedIdentities/gyanibotapp-agentpool"
+    }
+  },
+  "kubernetesVersion": "1.20.7",
+  "linuxProfile": {
+    "adminUsername": "azureuser",
+    "ssh": {
+      "publicKeys": [
+        {
+          "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDirWlAsKcdtQw4p6XxyWOdcYYBND82xB1yf3IoU7+VvRTkK0dYFO691l5HLP3KMxeLkQkZsSR5auraGnGm9YC5Bfo3QdGcYXvrfutHMt58EZB2uAbfk9L/c+ezHKwr4O20RD3gpNncFUMUoC350NdxD+3aa4UrFComg7Lzx9BWmY4IPIA6+YbfhHt3sX6AfWfwSybKiOxrJXq+G5oNigVxUPQAor6UGui72Lq8+hkWHTIM3caxny/AGh1CWaxA+INXzbOq2m0qhgRxGxf6BprzH5YN5JCZ4iIBDnuPZtg407Zq8xpVStkkuyTeIX5fmuDHZ/Pe3VIVg3GoPHC0AVAn"
+        }
+      ]
+    }
+  },
+  "location": "westus",
+  "maxAgentPools": 100,
+  "name": "gyanibotapp",
+  "networkProfile": {
+    "dnsServiceIp": "10.0.0.10",
+    "dockerBridgeCidr": "172.17.0.1/16",
+    "loadBalancerProfile": {
+      "allocatedOutboundPorts": null,
+      "effectiveOutboundIPs": [
+        {
+          "id": "/subscriptions/fee97dff-e03e-498c-a273-efe00151f335/resourceGroups/MC_gyanibotaks_gyanibotapp_westus/providers/Microsoft.Network/publicIPAddresses/919f582f-61b0-4b08-a20d-ae6b577392b9",
+          "resourceGroup": "MC_gyanibotaks_gyanibotapp_westus"
+        }
+      ],
+      "idleTimeoutInMinutes": null,
+      "managedOutboundIPs": {
+        "count": 1
+      },
+      "outboundIPs": null,
+      "outboundIpPrefixes": null
+    },
+    "loadBalancerSku": "Standard",
+    "networkMode": null,
+    "networkPlugin": "kubenet",
+    "networkPolicy": null,
+    "outboundType": "loadBalancer",
+    "podCidr": "10.244.0.0/16",
+    "serviceCidr": "10.0.0.0/16"
+  },
+  "nodeResourceGroup": "MC_gyanibotaks_gyanibotapp_westus",
+  "podIdentityProfile": null,
+  "powerState": {
+    "code": "Running"
+  },
+  "privateFqdn": null,
+  "privateLinkResources": null,
+  "provisioningState": "Succeeded",
+  "resourceGroup": "gyanibotaks",
+  "servicePrincipalProfile": {
+    "clientId": "msi",
+    "secret": null
+  },
+  "sku": {
+    "name": "Basic",
+    "tier": "Free"
+  },
+  "tags": null,
+  "type": "Microsoft.ContainerService/ManagedClusters",
+  "windowsProfile": null
+}
